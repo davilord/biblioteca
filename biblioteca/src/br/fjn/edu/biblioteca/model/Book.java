@@ -8,10 +8,10 @@ public class Book {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	private String model;
-	private String mark;
+	private String autor;
+	private String editora;
 	private String isbn;
-	private String color;
+	private String genero;
 
 	public Integer getId() {
 		return id;
@@ -21,20 +21,20 @@ public class Book {
 		this.id = id;
 	}
 
-	public String getModel() {
-		return model;
+	public String getAutor() {
+		return autor;
 	}
 
-	public void setModel(String model) {
-		this.model = model;
+	public void setAutor(String autor) {
+		this.autor = autor;
 	}
 
-	public String getMark() {
-		return mark;
+	public String getEditora() {
+		return editora;
 	}
 
-	public void setMark(String mark) {
-		this.mark = mark;
+	public void setEditora(String editora) {
+		this.editora = editora;
 	}
 
 	public String getIsbn() {
@@ -45,23 +45,23 @@ public class Book {
 		this.isbn = isbn;
 	}
 
-	public String getColor() {
-		return color;
+	public String getGenero() {
+		return genero;
 	}
 
-	public void setColor(String color) {
-		this.color = color;
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((color == null) ? 0 : color.hashCode());
+		result = prime * result + ((genero == null) ? 0 : genero.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((isbn == null) ? 0 : isbn.hashCode());
-		result = prime * result + ((mark == null) ? 0 : mark.hashCode());
-		result = prime * result + ((model == null) ? 0 : model.hashCode());
+		result = prime * result + ((editora == null) ? 0 : editora.hashCode());
+		result = prime * result + ((autor == null) ? 0 : autor.hashCode());
 		return result;
 	}
 
@@ -74,10 +74,10 @@ public class Book {
 		if (getClass() != obj.getClass())
 			return false;
 		Book other = (Book) obj;
-		if (color == null) {
-			if (other.color != null)
+		if (genero == null) {
+			if (other.genero != null)
 				return false;
-		} else if (!color.equals(other.color))
+		} else if (!genero.equals(other.genero))
 			return false;
 		if (id == null) {
 			if (other.id != null)
@@ -89,15 +89,15 @@ public class Book {
 				return false;
 		} else if (!isbn.equals(other.isbn))
 			return false;
-		if (mark == null) {
-			if (other.mark != null)
+		if (editora == null) {
+			if (other.editora != null)
 				return false;
-		} else if (!mark.equals(other.mark))
+		} else if (!editora.equals(other.editora))
 			return false;
-		if (model == null) {
-			if (other.model != null)
+		if (autor == null) {
+			if (other.autor != null)
 				return false;
-		} else if (!model.equals(other.model))
+		} else if (!autor.equals(other.autor))
 			return false;
 		return true;
 	}

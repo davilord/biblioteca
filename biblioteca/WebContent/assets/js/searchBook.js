@@ -36,20 +36,20 @@ function preencheCampos(book) {
 		}
 	}
 
-	$("#vehicle_first").addClass("has-success");
-	$("#vehicle_last").addClass("has-success");
+	$("#book_first").addClass("has-success");
+	$("#book_last").addClass("has-success");
 
 }
 
 function nadaEncontrado() {
 
-	$("#vehicle_first").removeClass("has-success");
-	$("#vehicle_last").removeClass("has-success");
+	$("#book_first").removeClass("has-success");
+	$("#book_last").removeClass("has-success");
 
-	$("#vehicle_first").addClass("has-error");
-	$("#vehicle_last").addClass("has-error");
+	$("#book_first").addClass("has-error");
+	$("#book_last").addClass("has-error");
 
-	var campos = [ "model", "book_id", "isbn", "mark", "color" ];
+	var campos = [ "autor", "book_id", "isbn", "editora", "genero" ];
 	for (var i = 0; i <= campos.length; i++) {
 		
 		$("#" + campos[i]).prop("disabled", false);

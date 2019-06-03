@@ -7,13 +7,15 @@
 <div class="row">
 	<div class="col-lg-12 col-md-12">
 		<div class="">
-			<h2>Serviços</h2>
+		<br>
+		<br>
+			<!-- <h2>Serviços</h2> -->
 		</div>
 		<ul class="nav nav-tabs" role="tablist" id="myTab">
 			<li role="presentation" class="active"><a href="#home"
-				aria-controls="home" role="tab" data-toggle="tab">Serviços de hoje</a></li>
+				aria-controls="home" role="tab" data-toggle="tab">Empréstimos de hoje</a></li>
 			<li role="presentation"><a href="#other"
-				aria-controls="profile" role="tab" data-toggle="tab">Todos os serviços</a></li>
+				aria-controls="profile" role="tab" data-toggle="tab">Todos os empréstimos</a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -23,11 +25,8 @@
 			<div role="tabpanel" class="tab-pane" id="other">
 
 				<jsp:include page="tab_list_old_services.jsp"></jsp:include>
-
 			</div>
-		</div>
-
-		
+		</div>		
 	</div>
 </div>
 

@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-warning btn-lg " data-toggle="modal"
-	data-target="#myModal">Emprestar</button>
+	data-target="#myModal">Emprestar Livro</button>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
@@ -17,27 +17,27 @@
 				role="form" class="form-horizontal">
 				<div class="modal-body">
 					<!-- form vehicle -->
-					<div class="form-group" id="vehicle_first">
+					<div class="form-group" id="book_first">
 						<div class="col-lg-6 col-md-6 ">
 							<label for="inputuserName" class="col-sm-0 control-label">Inserir ISBN</label> <input type="text"
 								name="book.isbn" placeholder="ISBN" required
 								class="form-control" id="isbn" maxlength="13" autofocus="autofocus"/>
 						</div>
 					</div>
-					<div class="form-group" id="vehicle_last">
+					<div class="form-group" id="book_last">
 						<div class="col-md-4">
 							<label for="inputuserName" class="col-sm-2 control-label">Autor</label>
-							<input type="text" name="book.model" placeholder="Autor"
-								id="model" required class="form-control" />
+							<input type="text" name="book.autor" placeholder="Autor"
+								id="autor" required class="form-control" />
 						</div>
 						<div class="col-md-4">
 							<label for="inputuserName" class="col-sm-2 control-label">Editora</label>
-							<input type="text" name="book.mark" id="mark"
+							<input type="text" name="book.editora" id="editora"
 								placeholder="Editora" required class="form-control" />
 						</div>
 						<div class="col-md-4">
 							<label for="inputuserName" class="col-sm-2 control-label">Genero</label>
-							<input type="text" name="book.color" id="color"
+							<input type="text" name="book.genero" id="genero"
 								placeholder="Genero" required class="form-control" />
 						</div>
 						<input type="hidden" id="book_id" value="NULL">
@@ -54,4 +54,4 @@
 	</div>
 </div>
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/assets/js/searchVehicle.js"></script>
+	src="${pageContext.request.contextPath}/assets/js/searchBook.js"></script>

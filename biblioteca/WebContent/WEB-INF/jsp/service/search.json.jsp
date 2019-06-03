@@ -1,1 +1,1 @@
-{ mark: '${book.mark}' }
+{ editora: '${book.editora}' }
